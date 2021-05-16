@@ -2,19 +2,15 @@ package com.company;
 
 public class Circle extends Shape {
 
-
     @Override
-    public void getArea(double radius) {
-        double area;
-        area = Math.PI * Math.pow(radius, 2);
-        System.out.println("Circle area = " + area);
+    public double getArea(double radius) {
+        setArea(Math.PI * Math.pow(radius, 2));
+        return getArea();
     }
 
     @Override
-    public void getPerimeter(double radius) {
-        double perimeter;
-        perimeter = 2 * radius * Math.PI;
-        System.out.println("Circle perimeter = " + perimeter);
+    public double getPerimeter(double radius) {
+        setPerimeter(2 * radius * Math.PI);
+        return getPerimeter();
     }
-
 }
