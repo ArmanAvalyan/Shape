@@ -11,8 +11,8 @@ public abstract class Shape {
 
     @Override
     public String toString() {
-        return "area = " + getArea() +
-                ", perimeter = " + getPerimeter();
+        return "area = " + area +
+                ", perimeter = " + perimeter;
     }
 
     public double getArea() {
